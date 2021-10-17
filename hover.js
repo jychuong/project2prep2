@@ -1,7 +1,3 @@
-// Adapted from Learning Processing by Daniel Shiffman
-// http://www.learningprocessing.com
-// Doorbell sample by Corsica_S via freesound.org,
-// Creative Commons BY 3.0
 
 // A Class to describe a "doorbell" (really a button)
 class Doorbell {
@@ -32,15 +28,13 @@ class Doorbell {
 let dingdong;
 
 // A doorbell object (that will trigger the sound)
-let doorbell; 
-
+let doorbell;
 let canvas;
 
 function setup() {
-  canvas = createCanvas(200, 200);
+  canvas = createCanvas(700, 400);
   canvas.parent('sketch2');
-  soundFormats('mp3', 'ogg');
-  dingdong = loadSound('assets/doorbell.mp3');
+  dingdong = loadSound('assets/hoversound.wav');
 
   // Create a new doorbell
   doorbell = new Doorbell(width / 2, height / 2, 32);
